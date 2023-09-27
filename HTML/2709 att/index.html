@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de DOM</title>
+</head>
+<body>
+    <h1>Exemplo do DOM</h1>
+    <p>Escolha a cor da página</p>
+    <ul>
+        <li><a href="javascript:Verde()">Verde</a></li>
+        <li><a href="javascript:Amarelo()">Amarelo</a></li>
+        <li><a href="javascript:Azul()">Azul</a></li>
+        <li><a href="javascript:Rosa()">Rosa</a></li>
+    </ul>
+
+    <script type="text/javascript">
+        // Declarando a função Verde
+        function Verde() {
+            // Criando variável
+            var meuVerde = '';
+            meuVerde = document.createElement('link');
+            meuVerde.setAttribute('rel', 'stylesheet');
+            meuVerde.setAttribute('type', 'text/css');
+            meuVerde.setAttribute('href', 'verde.css');
+            document.head.appendChild(meuVerde);
+        }
+
+        // Declarando a função amarelo
+        function Amarelo() {
+            // Criando a variável
+            var meuAmarelo = '';
+            meuAmarelo = document.createElement('link');
+            meuAmarelo.setAttribute('rel', 'stylesheet');
+            meuAmarelo.setAttribute('type', 'text/css');
+            meuAmarelo.setAttribute('href', 'amarelo.css');
+            document.head.appendChild(meuAmarelo);
+        }
+
+        // Declarando a função Azul
+        function Azul() {
+            // Criando a variável
+            var meuAzul = '';
+            meuAzul = document.createElement('link');
+            meuAzul.setAttribute('rel', 'stylesheet');
+            meuAzul.setAttribute('type', 'text/css');
+            meuAzul.setAttribute('href', 'azul.css');
+            document.head.appendChild(meuAzul);
+        }
+
+        // Declarando a função Rosa
+        function Rosa() {
+            // Criando a variável
+            var meuRosa = '';
+            meuRosa = document.createElement('link');
+            meuRosa.setAttribute('rel', 'stylesheet');
+            meuRosa.setAttribute('type', 'text/css');
+            meuRosa.setAttribute('href', 'rosa.css');
+            document.head.appendChild(meuRosa);
+        }
+    </script>
+</body>
+</html>
